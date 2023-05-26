@@ -13,17 +13,17 @@ public partial class Exam
 
     public int ExamDuration { get; set; }
 
-    public int? ClassId { get; set; }
+    public string? ClassName { get; set; }
 
-    public int? SubjectId { get; set; }
+    public string? SubjectName { get; set; }
 
-    public int? FacultyId { get; set; }
+    public string? FacultyName { get; set; }
 
     public string? Status { get; set; }
 
-    public virtual Class? Class { get; set; }
+    public virtual Class? ClassNameNavigation { get; set; }
 
-    public virtual Faculty? Faculty { get; set; }
+    public virtual Faculty? FacultyNameNavigation { get; set; }
 
-    public virtual Subject? Subject { get; set; }
+    public virtual Subject? SubjectNameNavigation { get; set; }
 }

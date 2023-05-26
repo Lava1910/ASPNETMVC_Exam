@@ -25,13 +25,13 @@
                 @Html.DisplayNameFor(model => model.Status)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Class)
+                @Html.DisplayNameFor(model => model.ClassNameNavigation)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Faculty)
+                @Html.DisplayNameFor(model => model.FacultyNameNavigation)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Subject)
+                @Html.DisplayNameFor(model => model.SubjectNameNavigation)
             </th>
             <th></th>
         </tr>
@@ -52,13 +52,13 @@
                 @Html.DisplayFor(modelItem => item.Status)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Class.Id)
+                @Html.DisplayFor(modelItem => item.ClassNameNavigation.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Faculty.Id)
+                @Html.DisplayFor(modelItem => item.FacultyNameNavigation.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Subject.Id)
+                @Html.DisplayFor(modelItem => item.SubjectNameNavigation.Name)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
